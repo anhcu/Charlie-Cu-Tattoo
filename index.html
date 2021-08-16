@@ -26,5 +26,106 @@
     <div class="container">
         <img src="https://thumbs.dreamstime.com/b/male-hands-gloves-holding-tattoo-machine-black-male-hands-gloves-holding-tattoo-machine-120896483.jpg" alt="">
     </div>
+
+
+<div class="slideshow-container">
+    
+    
+<div class="mySlides fade" id="tanner">
+        <div class="numbertext"></div>
+          <div>Tanner Lemons</div>
+          <span style="font-size:150%;color:yellow;">&bigstar;&bigstar;&bigstar;&bigstar;&bigstar;</span>
+        <div class="text"></div>
+        <div class="test">
+            <p>
+                Never seen a more professional tattoo artist. He listens and communicates perfectly, while also giving you great ideas. He will make you feel super comfortable and he’s a really great dude. He’s a great artist and I’ll definitely be a repeat customer. Thanks for my cover up, Charlie!
+            </p>
+        </div>
+      </div>    
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+    <div>Daniel G.</div>
+    <span style="font-size:150%;color:yellow;">&bigstar;&bigstar;&bigstar;&bigstar;&bigstar;</span>
+  <div class="text"></div>
+  <div class="test">
+      <p>
+        Positive: Cleanliness, Professionalism, Punctuality, Quality, Value
+        Charlie is the best artist I’ve ever had the pleasure of working with. He was so detailed and attentive. He listened to my ideas and provided the best experience I’ve ever had with an artist.
+        
+        He’s great with any styles of tattoo, and easy to talk to. I recommend Charlie to anyone who’s in Atlanta or anywhere to get in touch with him. You won’t regret it 💯
+        
+      </p>
+  </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext"></div>
+      <div>Lane P.</div>
+      <span style="font-size:150%;color:yellow;">&bigstar;&bigstar;&bigstar;&bigstar;&bigstar;</span>
+    <div class="text"></div>
+    <div class="test">
+        <p>
+            Positive: Cleanliness, Professionalism, Punctuality, Quality, Value
+            Got my first session with Charlie done yesterday. Every second of the session was welcoming from start to finish. He’s extremely creative and talented at what he does. He makes you feel right at home the entire time. The entire process from the setup until the tattoo itself is done very professionally. I’ve never been happier with a piece of art of gotten tattooed. He’s an extremely cool dude, very open mined, and keeps good conversation with you while he works. As well as making sure you’re comfortable during your time in the shop. I will most defiantly be going back for my many tattoos to come!
+          
+        </p>
+    </div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+      <div>DJ</div>
+      <span style="font-size:150%;color:yellow;">&bigstar;&bigstar;&bigstar;&bigstar;&bigstar;</span>
+    <div class="text"></div>
+    <div class="test">
+        <p>
+            Charlie did an excellent job on my cover up. I did not think anybody would be able to fix the terrible scribble on my arm that was done by an apprentice 10 years ago. Charlie Cu went above and beyond. I now have an excellent work of art on my arm that I can be proud of. Very clean and professional studio. Will return for more work. 5 star tattoo artist!
+        </p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+      <div>Johnny D.</div>
+      <span style="font-size:150%;color:yellow;">&bigstar;&bigstar;&bigstar;&bigstar;&bigstar;</span>
+    <div class="text"></div>
+    <div class="test">
+        <p>
+            Never seen a more professional tattoo artist. He listens and communicates perfectly, while also giving you great ideas. He will make you feel super comfortable and he’s a really great dude. He’s a great artist and I’ll definitely be a repeat customer. Thanks for my cover up, Charlie!
+        </p>
+    </div>
+  </div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
 </body>
 </html>
