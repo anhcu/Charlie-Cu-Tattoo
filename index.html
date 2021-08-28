@@ -1,56 +1,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,700&display=swap"
-        rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Sandbox</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <title>Tattoo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!--nav-->
-    <nav>
-        <input id="nav-toggle" type="checkbox">
-        <ul class="links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#bio">Bio</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#TESTIMONIALS">Testimonials</a></li>
-            <li><a href="#social media">Social Media</a></li>
-            <li><a href="#email">Email</a></li>
-        </ul>
-        <label for="nav-toggle" class="icon-burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </label>
-    </nav>
-    <!--nav end-->
+	
 
-    <!--homepage-->
-    <div class="homepage">
-        <div class="sign">
-            <div class="tat">TATTOO</div>
-        </div>
-        <!-- <div class="knowArtist">
-            <button class="button button2">Get to know your artist</button>
-        </div> -->
-    </div>
-    
-    <!-- About -->
-    <div class="about-cont">
-        <div class="row">
-            <div class="column">
-                <img src="tattoo.png" alt="tattoo">
-            </div>
-            <div class="column" id="bio">
-                <div class="bio">Bio</div>
-                <p class="about">Charlie Cu's fascination with the visual arts began at a very young age. Through out
+    <nav>
+        <ul>
+            <a href="#home">
+                <li>Home</li>
+            </a>
+            <a href="#bio">
+                <li>Bio</li>
+            </a>
+            <a href="#work">
+                <li>Work</li>
+            </a>
+            <a href="#Testimonials">
+                <li>Testimonials</li>
+            </a>
+            <a href="#Location">
+                <li>Location</li>
+            </a>
+        </ul>
+        <div class="handle">Menu</div>
+    </nav>
+
+	<div id="home">
+		<div class="sign" id="text">
+			<h1 class="glow">TA<span id="offset">TT</span>OO</h1>
+		</div>
+	</div>
+
+
+    <div class="container">
+        <div class="card" id="bio">
+            <div class="img-container"></div>
+            <div class="card-content">
+                <h2 class="bio">Bio</h2>
+                <h1>Get to know your artist</h1>
+                <p class="excerpt">Charlie Cu's fascination with the visual arts began at a very young age. Through out
                     his
                     life he continually developed his love of the visual art mediums through sketching, drawing and
                     painting. Charlie's fine arts disciple pushed him to pursue tattooing, where he decided to center
@@ -64,158 +64,217 @@
                     his study of classical tattooing, he has grown to pursue a wide range of tattoo styles including
                     black
                     and grey realism, portraiture, and realism surrealism subject matters.</p>
-            </div>
-        </div>
-    </div>
+                <div class="social">
+					<span>
+                    <a href="https://www.facebook.com/charliecutattoos"><i class="fab fa-facebook" id="facebook"></i></a>
+					</span>
+					<span>
+                    <a href="https://www.instagram.com/charliecutattoos/"><i class="fab fa-instagram" id="insta" aria-hidden="true"></i></a>
+					</span>
+					<span>
+                    <a href="https://www.google.com/search?q=charlie+cu+tattoo&sxsrf=AOaemvK1gEtQB7v03ns5yjhz3JLw8eUUjA%3A1630177801296&source=hp&ei=CYoqYfzRD4qRwbkPyPuhgA8&iflsig=ALs-wAMAAAAAYSqYGRCD31KhEhMjyh3ye5GJGEC1XisS&oq=charlie+cu+tattoo&gs_lcp=Cgdnd3Mtd2l6EAMyDgguEIAEEMcBEK8BEJMCMgYIABAWEB4yAggmOgcIIxDqAhAnOgQIIxAnOg4ILhCABBCxAxDHARCjAjoaCC4QgAQQsQMQgwEQxwEQ0QMQiwMQqAMQ0gM6CAgAEIAEELEDOggILhCxAxCDAToXCC4QgAQQsQMQxwEQ0QMQiwMQqAMQ0gM6BAgAEEM6BAguEEM6CwguEIAEELEDEIMBOg4ILhCABBDHARDRAxCLAzoICAAQgAQQyQM6CAguEIAEELEDOgUILhCABDoECAAQAzoLCC4QgAQQsQMQkwI6DggAELEDEIsDEKYDEKgDOgsILhCABBDHARCvAToFCAAQgAQ6CAgAEBYQChAeUOATWKcwYIkyaAFwAHgAgAGYAYgBgg2SAQQxMS42mAEAoAEBsAEKuAEC&sclient=gws-wiz&ved=0ahUKEwi8-o7GtdTyAhWKSDABHch9CPAQ4dUDCAo&uact=5#lrd=0x88f594094b000001:0x219ad83ef6e65e3e,1,,,"><i class="fab fa-google" id="google"></i></a>
+					</span>
 
 
-
-    <!-- About end -->
-    <div class="container">
-
-        <h1 class="heading">Recent work</h1>
-
-        <div class="gallery">
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="1.png"
-                    alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="2.png" alt="sunset behind San Francisco city skyline">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="3.png"
-                    alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="4.png"
-                    alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="5.png"
-                    alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="6.png"
-                    alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="7.png"
-                    alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="8.png"
-                    alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="9.png"
-                    alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="10.png"
-                    alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="11.png"
-                    alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="12.png"
-                    alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    <!--Testimonials-->
-    <div class="container" id="TESTIMONIALS">
-        <div class="row">
-            <div class="col-md-8 col-center m-auto">
-                <h2>Testimonials</h2>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Carousel -->
-                    <div class="carousel-inner">
-                        <div class="item carousel-item active">
-                            <div class="img-box"><img src="icon-m.png" alt=""></div>
-                            <p class="testimonial">Never seen a more professional tattoo artist. He listens and
-                                communicates perfectly, while also giving you great ideas. He will make you feel super
-                                comfortable and he’s a really great dude. He’s a great artist and I’ll definitely be a
-                                repeat customer. Thanks for my cover up, Charlie!</p>
-                            <p class="overview">Tanner L.</p>
-                        </div>
-                        <div class="item carousel-item">
-                            <div class="img-box"><img src="icon-m.png" alt=""></div>
-                            <p class="testimonial">Positive: Cleanliness, Professionalism, Punctuality, Quality, Value
-                                Charlie is the best artist I’ve ever had the pleasure of working with. He was so
-                                detailed and attentive. He listened to my ideas and provided the best experience I’ve
-                                ever had with an artist.
-
-                                He’s great with any styles of tattoo, and easy to talk to. I recommend Charlie to anyone
-                                who’s in Atlanta or anywhere to get in touch with him. You won’t regret it 💯</p>
-                            <p class="overview">Daniel G.</p>
-                        </div>
-                        <div class="item carousel-item">
-                            <div class="img-box"><img src="icon-w.png" alt=""></div>
-                            <p class="testimonial">Positive: Cleanliness, Professionalism, Punctuality, Quality, Value
-                                Got my first session with Charlie done yesterday. Every second of the session was
-                                welcoming from start to finish. He’s extremely creative and talented at what he does. He
-                                makes you feel right at home the entire time. The entire process from the setup until
-                                the tattoo itself is done very professionally. I’ve never been happier with a piece of
-                                art of gotten tattooed. He’s an extremely cool dude, very open mined, and keeps good
-                                conversation with you while he works. As well as making sure you’re comfortable during
-                                your time in the shop. I will most defiantly be going back for my many tattoos to come!
-                            </p>
-                            <p class="overview">Lane P.</p>
-                        </div>
-                        <div class="item carousel-item">
-                            <div class="img-box"><img src="icon-m.png" alt=""></div>
-                            <p class="testimonial"> Never seen a more professional tattoo artist. He listens and
-                                communicates perfectly, while also giving you great ideas. He will make you feel super
-                                comfortable and he’s a really great dude. He’s a great artist and I’ll definitely be a
-                                repeat customer. Thanks for my cover up, Charlie!</p>
-                            <p class="overview">DJ</p>
-                        </div>
-                        <div class="item carousel-item">
-                            <div class="img-box"><img src="icon-m.png" alt=""></div>
-                            <p class="testimonial">Never seen a more professional tattoo artist. He listens and
-                                communicates perfectly, while also giving you great ideas. He will make you feel super
-                                comfortable and he’s a really great dude. He’s a great artist and I’ll definitely be a
-                                repeat customer. Thanks for my cover up, Charlie!</p>
-                            <p class="overview">Johnny D.</p>
-                        </div>
-                    </div>
-                    <!-- Carousel Controls -->
-                    <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-                    <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
+					
+					<div class="name">
+					<p class="author">Charlie Cu</p>
+					</div>
                 </div>
             </div>
         </div>
     </div>
-    <!--Testimonials end-->
+<!--END BIO -->
+ 
 
+
+<!--WORK -->
+<!-- <section>
+    <div class="container-work" id="work">
+        <div class="recent">Recent Work</div>
+        <img src="/assets/images/1.png" alt="">
+        <img src="/assets/images/1.png" alt="">
+        <img src="/assets/images/1.png" alt="">
+        <img src="/assets/images/1.png" alt="">
+        <img src="/assets/images/1.png" alt="">
+        <img src="/assets/images/1.png" alt="">
+    </div>
+</section> -->
+
+
+
+<div class="container-work">
+
+	<h1 class="heading">Recent work</h1>
+
+	<div class="gallery">
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="/assets/images/1.png"
+				alt="work">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="/assets/images/2.png" alt="work">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="/assets/images/3.png"
+				alt="work">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="/assets/images/4.png"
+				alt="work">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="/assets/images//5.png"
+				alt="work">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="/assets/images/6.png"
+				alt="work">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="/assets/images/7.png"
+				alt="work">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="/assets/images/8.png"
+				alt="work">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="/assets/images/9.png"
+				alt="work">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="/assets/images/10.png"
+				alt="work">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="/assets/images/11.png"
+				alt="work">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="/assets/images/12.png"
+				alt="work">
+		</div>
+
+	</div>
+
+</div>
+
+<!--END WORK -->
+
+<section>
+<!--Testimonials-->
+<div class="container-test" id="Testimonials">
+	<div class="row">
+		<div class="col-md-8 col-center m-auto">
+			<div class="test">Testimonials</div>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Carousel -->
+				<div class="carousel-inner">
+					<div class="item carousel-item active">
+						<div class="img-box"><img src="/assets/images/icon-m.png" alt=""></div>
+						<p class="testimonial">"Never seen a more professional tattoo artist. He listens and
+							communicates perfectly, while also giving you great ideas. He will make you feel super
+							comfortable and he’s a really great dude. He’s a great artist and I’ll definitely be a
+							repeat customer. Thanks for my cover up, Charlie!"</p>
+						<p class="overview">Tanner L.</p>
+					</div>
+					<div class="item carousel-item">
+						<div class="img-box"><img src="/assets/images/icon-m.png" alt=""></div>
+						<p class="testimonial">"Positive: Cleanliness, Professionalism, Punctuality, Quality, Value
+							Charlie is the best artist I’ve ever had the pleasure of working with. He was so
+							detailed and attentive. He listened to my ideas and provided the best experience I’ve
+							ever had with an artist.
+
+							He’s great with any styles of tattoo, and easy to talk to. I recommend Charlie to anyone
+							who’s in Atlanta or anywhere to get in touch with him. You won’t regret it 💯"</p>
+						<p class="overview">Daniel G.</p>
+					</div>
+					<div class="item carousel-item">
+						<div class="img-box"><img src="/assets/images/icon-w.png" alt=""></div>
+						<p class="testimonial">"Positive: Cleanliness, Professionalism, Punctuality, Quality, Value
+							Got my first session with Charlie done yesterday. Every second of the session was
+							welcoming from start to finish. He’s extremely creative and talented at what he does. He
+							makes you feel right at home the entire time. The entire process from the setup until
+							the tattoo itself is done very professionally. I’ve never been happier with a piece of
+							art of gotten tattooed. He’s an extremely cool dude, very open mined, and keeps good
+							conversation with you while he works. As well as making sure you’re comfortable during
+							your time in the shop. I will most defiantly be going back for my many tattoos to come!""
+						</p>
+						<p class="overview">Lane P.</p>
+					</div>
+					<div class="item carousel-item">
+						<div class="img-box"><img src="/assets/images/icon-m.png" alt=""></div>
+						<p class="testimonial"> Never seen a more professional tattoo artist. He listens and
+							communicates perfectly, while also giving you great ideas. He will make you feel super
+							comfortable and he’s a really great dude. He’s a great artist and I’ll definitely be a
+							repeat customer. Thanks for my cover up, Charlie!</p>
+						<p class="overview">DJ</p>
+					</div>
+					<div class="item carousel-item">
+						<div class="img-box"><img src="/assets/images/icon-m.png" alt=""></div>
+						<p class="testimonial">Never seen a more professional tattoo artist. He listens and
+							communicates perfectly, while also giving you great ideas. He will make you feel super
+							comfortable and he’s a really great dude. He’s a great artist and I’ll definitely be a
+							repeat customer. Thanks for my cover up, Charlie!</p>
+						<p class="overview">Johnny D.</p>
+					</div>
+				</div>
+				<!-- Carousel Controls -->
+				<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<!--Testimonials end-->
+
+<!--EMAIL/LOCATION -->
+<center class="location">
+	<h1 id="Location" style="color:red">
+		Charlie Cu Tatoo
+	</h1>
+	  
+	<div >
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.0668160966347!2d-84.38081554947755!3d33.91367988054882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f594094b000001%3A0x219ad83ef6e65e3e!2sCharlie%20Cu%20Tattoo!5e0!3m2!1sen!2sus!4v1630032853385!5m2!1sen!2sus"
+				width="400" 
+				height="300" 
+				style="border:0;" 
+				allowfullscreen="" 
+				loading="lazy">
+		</iframe>
+	</div>
+</center>
+<!--EMAIL/LOCATION -->
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <script>
+     $('.handle').on('click', function(){
+       $('nav ul').toggleClass('showing');
+     });
+   </script>
+   
+    
 
 </body>
-
 </html>
