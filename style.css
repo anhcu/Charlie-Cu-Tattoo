@@ -474,7 +474,7 @@ img {
 	padding: 0 70px;
 }
 .carousel-item {
-	color: white ;
+	color: #ccc ;
   background-color: gray;
   border-radius: 5px;
   font-weight: bold;
@@ -483,10 +483,15 @@ img {
 	overflow: hidden;
     min-height: 290px;
 }
+
+.img-box{
+  margin-top: 20px;
+}
+
 .carousel .item .img-box {
 	width: 135px;
 	height: 135px;
-	margin: 0 auto;
+	margin: 30 auto;
 	padding: 5px;
 	border: 1px solid #ddd;
 	border-radius: 50%;
@@ -541,8 +546,3 @@ img {
 	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
 }
 
-/**** email/location****/
-/* .location{
-  background-color: #fff;
-}
- */
